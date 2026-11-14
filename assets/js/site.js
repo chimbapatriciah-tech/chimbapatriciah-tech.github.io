@@ -12,8 +12,9 @@ if(languageButton){
   languageButton.addEventListener('click',()=>{
     if(activeLanguage==='en'){
       const target='https://translate.google.com/translate?sl=en&tl=de&u='+encodeURIComponent(window.location.href);
-      translatedTab=window.open(target,'_blank','noopener');
+      translatedTab=window.open(target,'_blank');
       if(translatedTab){
+        translatedTab.opener=null;
         activeLanguage='de';
         updateLanguageButton();
       }else{
