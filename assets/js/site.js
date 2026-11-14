@@ -2,7 +2,8 @@
    Keep the site's own compact DE/EN button and use the widget's language switcher. */
 const languageButton=document.querySelector('#language-toggle');
 if(languageButton){
-  let activeLanguage=(document.cookie.match(/(?:^|;\\s*)googtrans=\\/en\\/(de|en)(?:;|$)/)||[])[1]||'en';
+  const savedCookies=document.cookie.split(';').map(item=>item.trim());
+  let activeLanguage=savedCookies.includes('googtrans=/en/de')?'de':'en';
   let pendingLanguage=null;
   const updateLanguageButton=()=>{
     languageButton.textContent=activeLanguage==='de'?'EN':'DE';
