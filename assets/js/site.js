@@ -33,7 +33,7 @@ if(languageButton){
   widget.style.cssText='position:absolute;left:-10000px;top:0;width:1px;height:1px;overflow:hidden;';
   document.body.appendChild(widget);
   const script=document.createElement('script');
-  script.src='https://cdn.gtranslate.net/widgets/latest/flags.js';
+  script.src='https://cdn.gtranslate.net/widgets/latest/dropdown.js';
   script.defer=true;
   script.onload=()=>{
     if(pendingLanguage)switchLanguage(pendingLanguage);
