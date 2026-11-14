@@ -85,3 +85,49 @@
 @media(max-width:850px){.problem-grid{grid-template-columns:1fr 1fr}.package-grid{grid-template-columns:1fr}.package-card{min-height:0}.contact-grid{grid-template-columns:1fr}.contact-grid>div:first-child,.contact-grid .enquiry-panel,.contact-grid .contact-placeholder{grid-column:1}.why-points{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.problem-grid,.why-points{grid-template-columns:1fr}.enquiry-panel{padding:25px 20px}}
 @media print{.site-header,.site-footer,.button,.menu-toggle{display:none!important}}
+
+
+/* Brand palette refresh: green-led (65%), black (20%), orange (15%).
+   Green remains the foundation; black anchors typography and footer areas;
+   orange is reserved for high-value calls to action and small highlights. */
+:root{
+  --brand-green:#2f6b3f;
+  --brand-green-deep:#194b32;
+  --brand-green-soft:#e3eedf;
+  --brand-black:#171717;
+  --brand-orange:#f28c28;
+  --brand-orange-deep:#d96d12;
+  --orange:var(--brand-green);
+  --orange-deep:var(--brand-green-deep);
+  --orange-soft:var(--brand-green-soft);
+  --ink:var(--brand-black);
+}
+.button-primary{background:var(--brand-orange);color:var(--brand-black)}
+.button-primary:hover{background:var(--brand-orange-deep);color:#fff}
+.button-outline{border-color:var(--brand-orange);color:var(--brand-black)}
+.button-outline:hover{background:#fff0df}
+.hero h1 em,.page-hero h1 em,h2 em,.founder-copy h2 em,.founder-preview-copy h2 em{color:var(--brand-orange-deep)}
+.eyebrow,.text-link span,.card-link span,.detail-number,.workshop-table article>span,
+.problem-grid article>span,.placeholder-mark{color:var(--brand-orange-deep)}
+.home-hero-panel{border-top:4px solid var(--brand-green)}
+.home-price{color:var(--brand-green-deep)}
+.home-price-button{background:var(--brand-orange);color:var(--brand-black)}
+.home-price-button:hover{background:var(--brand-orange-deep);color:#fff}
+.package-featured{border-color:var(--brand-green)}
+.package-ribbon{color:var(--brand-orange-deep)}
+.package-price,.price-note strong,.marketing-price,.home-card-price{color:var(--brand-green-deep)}
+.proof-strip,.site-footer{background:var(--brand-black)}
+.proof-grid div{border-left-color:var(--brand-orange)}
+.cta-band{background:var(--brand-green-deep)}
+.cta-band .eyebrow{color:#ffd2a3}
+.button-light{background:var(--brand-orange);color:var(--brand-black)}
+.button-light:hover{background:var(--brand-orange-deep);color:#fff}
+.problem-grid article,.package-card,.service-card{border-top:2px solid var(--brand-green)}
+.service-card-featured{border-top:3px solid var(--brand-orange)}
+.audience-tags span,.contact-topics span{background:var(--brand-green-soft);color:var(--brand-green-deep)}
+.enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus{outline-color:var(--brand-orange)}
+.enquiry-form .button-primary{background:var(--brand-orange)}
+.art-sun{background:var(--brand-green)}
+.art-disc{background:var(--brand-orange)}
+.hero-art{background:var(--brand-green-soft)}
+.hero-bottom i{background:var(--brand-orange)}
